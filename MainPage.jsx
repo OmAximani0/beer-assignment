@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import InputField from "./components/InputField";
 import Button from "./components/Button";
 import Header from "./components/HeaderForBeer";
-import PasswordField from "../../components/PasswordField";
 
 import { useFormik } from "formik";
 
@@ -67,7 +66,6 @@ const MainPage = () => {
                   className="in-w"
                 />  
               </div>
-              <PasswordField name="password" value={formik.values.password} onChange={formik.handleChange} />
               <Button btnName="Submit" type="submit" />
               {state.warning ? <h2 className={state.color}>{state.message}</h2> : null}
             </form>
