@@ -10,7 +10,7 @@ import "./Main.css";
 
 const MainPage = () => {
   const [state, setState1] = useState({
-    warning: false,
+    	warning: false,
 	message: "",
 	color: null
   });
